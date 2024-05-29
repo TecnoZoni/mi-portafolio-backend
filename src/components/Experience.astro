@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Junio a Agosto de 2023",
+    title: "Desarrollo Web",
+    company: "I.S.E.T N°25 Beppo Levi",
+    description:
+      "Presenté mi idea para el desarrollo de una renovada página web para el instituto al director como proyecto para mis prácticas profesionalizantes. Aceptó y le encantó la propuesta, y estuve bajo su supervisión durante la creación y el hosting de la página.",
+    link: "http://www.beppolevi.edu.ar",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
