@@ -1,12 +1,21 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
+
 const EXPERIENCIE = [
+  {
+    date: "2024 - 2025",
+    title: "Desarrollador Web Full Stack",
+    company: "Ibiza Gym",
+    description:
+      "Desarrollo de un sistema real de gestión de socios para un gimnasio, incluyendo registro de socios, control de pagos, vencimientos, entrenadores y notificaciones. El proyecto fue desarrollado en PHP con arquitectura propia y base de datos relacional. El cliente otorgó permiso explícito para publicar y documentar el código con fines educativos y profesionales.",
+    link: "https://github.com/TecnoZoni/ibiza-gym",
+  },
   {
     date: "Junio a Agosto de 2023",
     title: "Desarrollo Web",
     company: "I.S.E.T N°25 Beppo Levi",
     description:
-      "Presenté mi idea para el desarrollo de una renovada página web para el instituto al director como proyecto para mis prácticas profesionalizantes. Aceptó y le encantó la propuesta, y estuve bajo su supervisión durante la creación y el hosting de la página.",
+      "Presenté mi idea para el desarrollo de una renovada página web para el instituto al director como proyecto para mis prácticas profesionalizantes. Aceptó la propuesta y trabajé bajo su supervisión durante el desarrollo y el hosting del sitio.",
     link: "http://www.beppolevi.edu.ar",
   },
 ];
@@ -15,7 +24,7 @@ const EXPERIENCIE = [
 <ol class="relative mt-16">
   {
     EXPERIENCIE.map((experiencie) => (
-      <li class="">
+      <li>
         <ExperienceItem {...experiencie} />
       </li>
     ))

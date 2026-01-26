@@ -7,6 +7,13 @@ import LinkButton from "./LinkButton.astro";
 
 const PROJECTS = [
   {
+    title: "Facturador Web en PHP",
+    description:
+      "Aplicación web real desarrollada para un emprendimiento, orientada a la gestión de clientes, productos y facturación. Implementa un patrón MVC propio, operaciones CRUD completas y generación de comprobantes en PDF mediante FPDF. Utiliza PHP 7.4+, MySQL con PDO, peticiones AJAX para una experiencia dinámica y Bootstrap 5 junto a SweetAlert2 para el frontend. El sistema permite crear facturas con detalle, calcular totales automáticamente y descargar los comprobantes en PDF.",
+    github: "https://github.com/TecnoZoni/FacturadorPHP",
+    image: "/projects/facturador.png",
+  },
+  {
     title: "Bazar Web Application",
     description:
       "Aplicación web monolítica desarrollada con Java 17 y Spring Boot 3.3.5 para la gestión de clientes, productos y ventas de un bazar. Implementa el patrón MVC y utiliza una base de datos en memoria H2 para facilitar pruebas y despliegue. El frontend está construido con Thymeleaf y Bootstrap 5, ofreciendo una interfaz moderna y responsiva. Incorpora autenticación con Spring Security, una API Rest documentada con Swagger y utiliza MapStruct para el mapeo de entidades a DTOs, asegurando un código bien estructurado y mantenible.",
@@ -19,14 +26,6 @@ const PROJECTS = [
       "Programa de registro de turnos para una peluqueria canina creado con Java SE utilizando Swing para la interfaz, EclipseLink como ORM y MySQL para la persistencia de datos.",
     github: "https://github.com/TecnoZoni/Peluqueria_Canina_Java_JPA",
     image: "/projects/caninos.jpg",
-  },
-  {
-    title:
-      "Repositorio para Aprender el Camino a Ser un Buen Desarrollador Backend",
-    description:
-      "En este repositorio iré guardando contenido según lo vaya aprendiendo en mi camino como especialista backend, en mi caso con Java y Spring. La idea surge gracias al #Challenge-gentleman-diferencia de Gentleman Programming y tratará sobre crear contenido en LinkedIn y GitHub que sirva como autoaprendizaje y enseñanza para mejorar y diferenciarme de los demás desarrolladores backend.",
-    github: "https://github.com/TecnoZoni/Roadmap-Backend-developer",
-    image: "/projects/github.png",
   },
 ];
 ---
